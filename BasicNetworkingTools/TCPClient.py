@@ -18,3 +18,8 @@ response = client.recv(4096)
 print("Following response received: \n")
 print(response.decode())
 client.close()
+
+# TODO - Update code for following assumptions
+# 1. The connection to target will always succeed.
+# 2. Server expects us to send data first instead of vice-versa.
+# 3. Server will always return data to client in timely fashion.
